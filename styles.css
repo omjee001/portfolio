@@ -1,18 +1,57 @@
-.body {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #bb86fc;
+  --border-color: #333333;
 }
 
-.header, .footer {
-    background-color: #333;
-    color: #f0f0f0;
+body.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-.button {
-    background-color: #5c5c5c;
-    color: #f0f0f0;
+.navbar {
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.a {
-    color: #4aa3f4;
+.navbar a {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--link-color);
+}
+
+.hero {
+  background: linear-gradient(180deg, rgba(0,0,0,0.8), rgba(18, 18, 18, 1));
+}
+
+.projects {
+  background-color: var(--bg-color);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  animation: fadeIn 1s;
+}
+
+.skills {
+  background-color: var(--bg-color);
+}
+
+.contact {
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.footer {
+  background-color: var(--bg-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
