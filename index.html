@@ -1,1 +1,79 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>My Professional Portfolio</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <h1>Welcome to My Portfolio</h1>\n        <nav>\n            <ul>\n                <li><a href="#about">About</a></li>\n                <li><a href="#projects">Projects</a></li>\n                <li><a href="#skills">Skills</a></li>\n                <li><a href="#contact">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    <main>\n        <section id="about">\n            <h2>About Me</h2>\n            <p>This is a brief introduction about myself...</p>\n        </section>\n        <section id="projects">\n            <h2>Projects</h2>\n            <ul>\n                <li>Project 1: Description...</li>\n                <li>Project 2: Description...</li>\n            </ul>\n        </section>\n        <section id="skills">\n            <h2>Skills</h2>\n            <ul>\n                <li>Skill 1</li>\n                <li>Skill 2</li>\n            </ul>\n        </section>\n        <section id="contact">\n            <h2>Contact Information</h2>\n            <p>Email: example@example.com</p>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 My Portfolio</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm a Developer</h1>
+            <p>Creating elegant solutions with code</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div id="portfolio" class="projects-grid">
+                <!-- Projects will be added here by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, Express</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, VS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for opportunities!</p>
+            <a href="mailto:your.email@example.com" class="contact-btn">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
